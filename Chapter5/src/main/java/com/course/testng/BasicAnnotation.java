@@ -19,22 +19,22 @@ public class BasicAnnotation {
 
     @BeforeMethod
     public void beforeMethod(){
-        System.out.println("BeforeMethod这是在测试方法之前运行的");
+        System.out.println("BeforeMethod这是在每一个测试方法之前运行的，测试方法有几个，运行几次");
     }
 
     @AfterMethod
     public void afterMethod(){
-        System.out.println("AfterMethod这是在测试方法之后运行的");
+        System.out.println("AfterMethod这是在每一个测试方法之后运行的，测试方法有几个，运行几次");
     }
 
     @BeforeClass
     public void beforeClass(){
-        System.out.println("beforeClass这是在类运行之前运行的方法");
+        System.out.println("beforeClass这是在类运行之前运行的方法，一个测试类中运行一次");
     }
 
     @AfterClass
     public void afterClass(){
-        System.out.println("afterClass这是在类运行之后运行的方法");
+        System.out.println("afterClass这是在类运行之后运行的方法，一个测试类中运行一次");
     }
 
     @BeforeSuite
